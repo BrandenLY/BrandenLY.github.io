@@ -1,15 +1,30 @@
 body{
-  font-family: "Helvetica", "Avant Garde", "Times New Roman";
-  background-color: LightCyan;
-  color: Navy;
+  background-color: #efefef
 }
-h1{
-  opacity: 0.75;
+#featured-banner{
+  background-color: #88BBD6;
+  position: relative;
 }
-h3{
-  opacity: 0.45;
+
+#featured-banner::after{
+  content:'';
+  display:block;
+  width: 90%;
+  height: 100px;
+  z-index:-1;
+  box-shadow: 0 2px 100px;
+  position: absolute;
+  bottom: 10;
+  left: 5%
 }
-li a{
-  color: Gray;
-  text-decoration: none;
+
+a{
+  color: gray;
+}
+#topics > a{
+  color: #99D3DF;
+}
+
+.display-5{
+  font-size: 250%;
 }
