@@ -6,6 +6,7 @@ body{
   position: relative;
 }
 
+
 #featured-banner::after{
   content:'';
   display:block;
@@ -26,10 +27,40 @@ a{
 }
 
 .display-5{
-  font-size: 250%;
+  font-size: 200%;
 }
-@media only screen and (max-width: 600px) {
+
+#SecondaryArticleContainer{
+  width: 80%;
+}
+
+.non_featured_article{
+    display: flex;
+}
+
+.nfa_thumbnail{
+  margin: 0px 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  /* Topic Adjustments*/
   .display-5{
     font-size: 100%;
   }
+  /* Banner Adjustments*/
+  /* Secondary Article Adjustments*/
+  #SecondaryArticleContainer{
+    width:98%;
+    margin: 1% 0px;
+  }
+
+  .non_featured_article{
+    flex-wrap: wrap;
+    text-align:center;
+  }
+
+  .nfa_thumbnail{
+    margin: 5px auto;
+  }
 }
+
