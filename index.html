@@ -1,14 +1,4 @@
-
-
-
-
-
 <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
-
-
-
-
-
 
 <!DOCTYPE html>
 <html>
@@ -20,7 +10,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="resources/css/index.css">
+  <link rel="stylesheet" href="/static/blog/css/custom.css">
 </head>
 </head>
 
@@ -74,6 +64,7 @@
   
 
 <body>
+<!-- Load topic Navigation -->
 
 
 
@@ -86,15 +77,11 @@
 </div>
 
 
+<!-- Load featured article -->
 
 
 <div class="py-5 px-3 mb-3 mx-3 rounded" id="featured-banner" style="display:flex; flex-direction: column; justify-content: center;">
 <!-- Add Banner HTML Here -->
-        
-
-
-
-
           <blockquote class="blockquote text-center pt-1">
             <title class=""></title>
             <p>This Post is a sample post to understand the ordering for posts in the database</p>
@@ -106,32 +93,22 @@
           <div class="" style="text-align:center">
               <a href="3" class="" style="">Read More &#10095</a>
           </div>
-
-
-
-
-
-
-
-          
+     
 <!-- Add Banner HTML Here ^. -->
 </div>
 
-
-<!-- Load topic Navigation -->
-<!-- Load featured article -->
 <!-- Load secondary articles -->
-  <div class="mt-5 px-2" style="width:80%;">
-    
-      
-    
-      
+  <div class="mt-5 px-2" id="SecondaryArticleContainer" style="">
+      <div class="px-3 py-4 my-2 border bg-light non_featured_article" style="">
+        <!-- Article Thumbnail -->
+        <img src=/static/blog/images/thumbnails/download.jpg alt="Thumbnail" class="border rounded nfa_thumbnail" style="height: 200px; width: 400px;">
 
-      <div class="media px-3 py-4 my-2 border bg-light">
-        <img src=/static/blog/images/thumbnails/download.jpg alt="Thumbnail" class="mr-3 border rounded" style="height: 200px; width: 400px;">
-        <div class="media-body" style="height: 200px; overflow: hidden">
+        <!-- Text conten: Title, Article Content, Continue Reading button -->
+        <div class="" style="display: flex; flex-direction: column;">
+          <!-- Title and publishing date-->
           <h5 class="">Sample Article | 02-25-2018</h5>
-          <p class="">
+          <!--Shortened Article content-->
+          <p class="" style="height: 120px; overflow: hidden;">
             Behind the scenes, Django delegates decisions about how and where to store files to a file storage system. This is the object that actually understands things like file systems, opening and reading files, etc.
 
 Django’s default file storage is given by the DEFAULT_FILE_STORAGE setting; if you don’t explicitly provide a storage system, this is the one that will be used.
@@ -141,17 +118,14 @@ See below for details of the built-in default file storage system, and see Writi
 Storage objects
 Though most of the time you’ll want to use a File object (which delegates to the proper ...
           </p>
-          <a href="2" class="btn btn-primary btn-sm" style="">Read More &#187</a>
+          <!-- "Continue reading" Button-->
+          <div class="" style="text-align:center">
+              <a href="2" class="" style="">Continue Reading &#10095</a>
+          </div>
         </div>
-      </div>
-
-      
-    
+      </div>      
   </div>
-
 </body>
-
-
 <footer class="bg-light pt-5 px-5 mt-5 border-top border-light">
   <div class="container text-center">
     <form>
@@ -174,3 +148,4 @@ Though most of the time you’ll want to use a File object (which delegates to t
   <!-- Load Javascript (Bootstrap) -->
   <script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
